@@ -10,6 +10,8 @@ here the environment variables
 
 
    **Create User API**
+    
+    
     curl --location --request POST 'http://localhost:8082/v1/users' \
     --form 'Fullname="seetharamu"' \
     --form 'Email="ramu@gmail.com"' \
@@ -18,14 +20,20 @@ here the environment variables
 
 
    **Fetch All User at once with pagination**
+   
+   
     curl --location --request GET 'http://localhost:8082/v1/users'
 
 
    **Fetch Perticular User using id**
+   
+   
     curl --location --request GET 'http://localhost:8082/v1/users/5'
 
 
    **Update Perticular User using id**
+   
+   
     curl --location --request PUT 'http://localhost:8082/v1/users/2' \
     --header 'Content-Type: application/json' \
     --data-raw '{
@@ -33,4 +41,6 @@ here the environment variables
     }'
 
    **Delete Perticular User using id**
+   
+   
     curl --location --request DELETE 'http://localhost:8082/v1/users/2'
