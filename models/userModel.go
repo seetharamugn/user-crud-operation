@@ -1,11 +1,13 @@
 package models
 
-import "gorm.io/gorm"
+import (
+	"gorm.io/gorm"
+)
 
 type User struct {
 	gorm.Model
 	Fullname string
 	Email    string
-	Mobile   int64
+	Mobile   string
 	Picture  string
 }
